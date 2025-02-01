@@ -1,15 +1,25 @@
-/* const mainContentSection = document.querySelector('h2')
-mainContentSection.style.color = 'red' 
-const link = document.querySelector('#fork')
-link.style.textDecoration = 'underline'*/
-/* const section = document.querySelector('section')
+//ex01
+//const mainContentSection = document.querySelector('h2')
+//mainContentSection.style.color = 'red' 
 
-const active = section.querySelector('section .active')
+//ex02
+//const link = document.querySelector('#fork')
+//link.style.textDecoration = 'underline'
+///////////////////////////////////////////////////////////
+//onst aboutA = document.querySelector('#about')
+//aboutA.style.color = 'green'
+/////////////////////////////////////////////////////////////
+/* 
+const section = document.querySelector('section')
+
+const active = section.querySelector('.active')
 active.style.color = 'blue'
 
 const p = section.querySelector('p')
 
-const span = section.querySelector('span') */
+const span = section.querySelector('span')
+*/
+//////////////////////////////////////////////////////////////////
 //const activeElements = document.querySelectorAll('.active')
 
 // add bordor
@@ -18,11 +28,17 @@ const span = section.querySelector('span') */
 //for (let i = 0; i < activeElements.length; i++){
 //    activeElements[i].style.border = '1px solid red'
 //}
-
+//////////////////////////////////////////////////////////////////
 document.body.style.background  = 'lightgrey'
 document.title = "Neebin's Website"
 
 const contact = document.querySelector('#contact')
+
 contact.addEventListener('mouseover', () => {
-    contact.closest('nav').style.backgroundColor = 'lightblue'
+    contact.parentElement.style.backgroundColor = 'lightblue'
+    //contact.closest('nav').style.backgroundColor = 'lightblue'
+})
+contact.addEventListener('mouseleave', () => {
+    contact.parentElement.style.backgroundColor = ''
+    //contact.closest('nav').style.backgroundColor = ''
 })
